@@ -13,8 +13,8 @@ class MyClient(discord.Client):
         print(f'Mensagem de {message.author}: {message.content}')
         if message.content == '$eae':
             await message.channel.send(f'Eae {message.author.name}, beleza?')
-        elif message.content == '$piroca':
-            await message.channel.send('rolas de 13cm ou 20cm?')
+        elif message.content == '$perguntarquanto':
+            await message.channel.send('quanto?')
         elif message.content == '$frase':
             frase_aleatoria = random.choice(dados)
             autor = frase_aleatoria['autor']
